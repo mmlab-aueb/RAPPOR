@@ -1,17 +1,16 @@
 from random import normalvariate, randint
 from rappor import Rappor
-import sys, os
-import pytest
+
 
 '''
 Configuration Parameters
 '''
-num_providers = 1000    # Number of data providers
+num_providers = 10000    # Number of data providers
 num_choices = 20        # Number of choices included in the question
 use_normal_dist = True  # If True normal distribution is used, otherwise uniform
 
 # Parameters that control the normal distribution
-normal_mean = 10        # The mean value
+normal_mean = 9        # The mean value
 nomal_dev = 1           # The deviation 
 
 def test_rappor():
